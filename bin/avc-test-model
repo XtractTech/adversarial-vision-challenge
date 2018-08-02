@@ -113,9 +113,9 @@ def test_model(directory, no_cache, no_build, gpu):
 
     print('Server version', model.server_version())
     # get predictions and/or gradient for model
+    print("TESTTESTTEST")
     print('Checking model axis and bounds...', end="")
     channel_axis = model.channel_axis()
-    print("TESTTESTTEST")
 
     assert channel_axis == 3, \
         "model channel axis should be 3, but is: %s" % channel_axis
